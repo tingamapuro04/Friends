@@ -11,6 +11,10 @@ module Friends
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 7.0
 
+    # Enable the use of the `method: :delete` attribute in links
+    config.action_view.embed_authenticity_token_in_remote_forms = true
+
+
     # Configuration for the application, engines, and railties goes here.
     #
     # These settings can be overridden in specific environments using the files
